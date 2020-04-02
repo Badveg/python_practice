@@ -21,5 +21,5 @@ for music in musics:
     if a_tag is not None:
         title = a_tag.text
         artist = music.select_one('td.info > a.artist.ellipsis').text
-        print(rank, ". ", title.strip(), "/", artist)
+        print("{}.{}/{}".format(rank,title.strip(), artist))
         rank += 1
